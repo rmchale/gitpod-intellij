@@ -6,6 +6,8 @@ image:
 tasks:
   - name: get dependencies
     prebuild: mvn package
+  - name: bootstrap
+    prebuild: git clone $GITPOD_INIT /workspace/gitpod-init
 #tasks:
 #  - name: docker-up
 #    command: sudo docker-up

@@ -14,6 +14,12 @@ class DemoTest {
     EmbeddedApplication<?> application;
 
     @Test
+    void test() {
+        System.out.println("foo");
+        Assertions.assertEquals(1, 1);
+    }
+
+    @Test
     void testItWorks() {
         Assertions.assertTrue(application.isRunning());
     }
