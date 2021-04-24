@@ -1,3 +1,3 @@
 #! /bin/sh
 
-~/.projector/configs/IntelliJ/run.sh /workspace/micronaut-quickstarts
+~/.projector/configs/IntelliJ/run.sh /workspace/gitpod-intellij
