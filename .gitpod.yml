@@ -3,6 +3,9 @@ image:
 
 # ddev and composer are running as part of the prebuild
 # when starting a workspace all docker images are ready
+tasks:
+  - name: get dependencies
+    prebuild: mvn package
 #tasks:
 #  - name: docker-up
 #    command: sudo docker-up
