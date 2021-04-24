@@ -5,9 +5,10 @@ image:
 # when starting a workspace all docker images are ready
 tasks:
   - name: get dependencies
-    prebuild: mvn package
-  - name: bootstrap
-    prebuild: git clone $USER_INIT /workspace/gitpod-init
+    prebuild: |
+      mvn package
+  - name: user bootstrap
+    command: test -d /workspace/${GITPOD_GIT_USER_NAME}-bootstrap || git clone ${USER_INIT} /workspace/${GITPOD_GIT_USER_NAME}-bootstrap
 #tasks:
 #  - name: docker-up
 #    command: sudo docker-up
