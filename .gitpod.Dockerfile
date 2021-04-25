@@ -1,4 +1,4 @@
-FROM eu.gcr.io/gitpod-core-dev/dev/dev-environment
+FROM eu.gcr.io/gitpod-core-dev/dev/dev-environment@sha256:4a35541a2ae1792026aac84029b02e19097d88c953a2a04e33a6ca6aa96c51e8
 #FROM gitpod/workspace-full
 SHELL ["/bin/bash", "-c"]
 
