@@ -1,5 +1,5 @@
 FROM gitpod/workspace-full
-SHELL ["/bin/bash", "-c"]
+SHELL ["/bin/zsh", "-c"]
 
 RUN sudo apt-get -qq update
 # Install required libraries for Projector + PhpStorm
