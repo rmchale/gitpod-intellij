@@ -1,5 +1,5 @@
-#FROM gitpod/workspace-full
 FROM eu.gcr.io/gitpod-core-dev/dev/dev-environment
+#FROM gitpod/workspace-full
 SHELL ["/bin/bash", "-c"]
 
 RUN sudo apt-get -qq update
