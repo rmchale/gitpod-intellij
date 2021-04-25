@@ -1,5 +1,6 @@
-FROM gitpod/workspace-full
-SHELL ["/bin/bash", "-c"]
+#FROM gitpod/workspace-full
+FROM eu.gcr.io/gitpod-core-dev/dev/dev-environment
+SHELL ["/bin/zsh", "-c"]
 
 RUN sudo apt-get -qq update
 # Install required libraries for Projector + PhpStorm
@@ -10,3 +11,7 @@ RUN pip3 install projector-installer
 RUN mkdir -p ~/.projector/configs  # Prevents projector install from asking for the license acceptance
 # RUN projector ide install 'IntelliJ IDEA Ultimate 2020.3.2' --no-auto-run
 RUN printf "2\nY\n3\n" | projector install --no-auto-run
+
+RUN brew install fd
+RUN brew install fzf
+RUN brew install ripgrep
