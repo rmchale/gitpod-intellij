@@ -7,7 +7,7 @@ tasks:
   - name: get dependencies
     prebuild: mvn package
   - name: user bootstrap
-    init: test -d "/workspace/${GITPOD_GIT_USER_NAME}-bootstrap" || (git clone ${USER_INIT} "/workspace/${GITPOD_GIT_USER_NAME}-bootstrap" && /workspace/)
+    init: test -d "/workspace/${GITPOD_GIT_USER_NAME}-bootstrap" || (git clone ${USER_INIT} "/workspace/${GITPOD_GIT_USER_NAME}-bootstrap" )
 #tasks:
 #  - name: docker-up
 #    command: sudo docker-up
